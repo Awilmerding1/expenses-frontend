@@ -40,5 +40,9 @@ class AccountEdit extends React.Component {
   }
 }
 
+AccountEdit.defaultProps = {
+  accounts: {}
+}
+
 
 export default connect(null, {editAccount})(AccountEdit)

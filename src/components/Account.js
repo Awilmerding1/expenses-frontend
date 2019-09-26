@@ -11,13 +11,14 @@ const Account = (props) => {
   let account = props.accounts.filter(account => account.id == props.match.params.id)[0]
 
   console.log(account)
-
   return (
+
     <div>
       <h2>
         {account ? account.name : null} - {account ? account.balance : null}
       </h2>
-      <TransactionsContainer account={account}/>
+      <TransactionsContainer account={account}/><br/>
+      <h4>Edit Account</h4>
       <AccountEdit account={account}/>
     </div>
   )

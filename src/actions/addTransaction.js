@@ -14,7 +14,7 @@ export const addTransaction = (transaction, accountId) => {
           alert(account.error)
         } else {
           dispatch({type: 'ADD_TRANSACTION', payload: account})
-        }  
+        }
       }
     )
   }
